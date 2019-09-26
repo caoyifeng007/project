@@ -1,0 +1,595 @@
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-xs-1,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    position: relative;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* logo与标题的设置 */
+
+.topBar {
+    width: 85%;
+    margin: 10px auto;
+    height: 80px;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+}
+
+
+/* 设置logo div左对齐 */
+
+.topBar_logo {
+    text-align: left;
+}
+
+
+/* 设置logo img自适应大小 */
+
+.topBar_img {
+    /* width: 100px; */
+    height: 80px;
+}
+
+
+/* 设置标题文字样式 */
+
+.topBar_words {
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 80px;
+}
+
+
+/* 设置时间右对齐 */
+
+.topBar_times {
+    text-align: right;
+    line-height: 80px;
+    font-size: 16px;
+}
+
+
+/* 设置导航栏整体样式 */
+
+.manage_bar .btns {
+    width: 85%;
+    margin: 0px auto;
+}
+
+.manage_bar>.bgColor {
+    width: 100%;
+    background-color: #95b3d7;
+}
+
+.bgColor {
+    border-bottom: 2px solid gray;
+}
+
+
+/* 设置3个按钮的样式 */
+
+.manage {
+    width: 50%;
+}
+
+.login,
+.register,
+.nav_father,
+.plz_login {
+    height: 70px;
+}
+
+
+/* 请登录字样设置 */
+
+.plz_login {
+    text-align: right;
+    font-size: 20px;
+    font-family: "Microsoft YaHei";
+    line-height: 70px;
+}
+
+.plz_login span {
+    text-decoration: none;
+    color: yellow;
+}
+
+.sign_out {
+    line-height: 24px;
+}
+
+
+/* 设置默认样式 */
+
+.login a,
+.register a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 70px;
+    /* background-color: red; */
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+/* 父级设置相对 */
+
+.nav_father {
+    position: relative;
+    text-align: center;
+}
+
+
+/* up和down设置绝对定位，并且重合 */
+
+.nav_down,
+.nav_up {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* 设置manage_bar的hover效果 */
+
+.login a:hover,
+.register a:hover,
+.nav_father a:hover,
+.nav_father div:hover {
+    text-shadow: 4px 3px 2px black;
+    background-color: #5d89bd;
+}
+
+
+/* down、二级菜单、注销按钮 默认隐藏 */
+
+.nav_up,
+.sign_out {
+    display: none;
+}
+
+.dropList {
+    display: none;
+    width: 100%;
+    height: 130px;
+    margin: 0 auto;
+    background-color: white;
+    position: absolute;
+    z-index: 10;
+}
+
+
+/* 设置一下二级菜单的点击范围 */
+
+.dropList a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+
+/* 弹出菜单图片样式 */
+
+.search {
+    width: 90px;
+    height: 96px;
+}
+
+.append {
+    width: 62px;
+    height: 84px;
+}
+
+#append:hover,
+#research:hover {
+    color: red !important;
+    font-size: 28px;
+}
+
+
+/* js动态的添加样式 */
+
+
+/* .appending {} */
+
+
+/* 二级菜单中间的竖线 */
+
+.vertical_line {
+    border-right: 1px solid gray;
+    height: 66%;
+    margin: 22px 0;
+    /* background-color: #5db75d; */
+}
+
+.dropList div {
+    text-align: center;
+    line-height: 120px;
+}
+
+
+/* 二级菜单中的字体 */
+
+#research,
+#append {
+    font-size: 26px;
+}
+
+
+/* 轮播图的背景图 */
+
+.myCarousel img {
+    width: 100%;
+    /* height: 600px; */
+}
+
+.myCarousel {
+    /* height: 800px; */
+}
+
+
+/* 轮播图小点点的颜色 */
+
+.carousel-indicators .active {
+    background-color: red;
+}
+
+.carousel-indicators li {
+    background-color: gray;
+    opacity: 1;
+    border: 0px;
+}
+
+
+/* 底部样式设置 */
+
+.foot_bar {
+    height: 284px;
+    background-color: #333;
+    color: #666;
+}
+
+.foot_bar .row {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.foot_bar .row>div {
+    color: #666;
+    text-align: center;
+}
+
+
+/* copyright和二维码的设置 */
+
+.trade_father,
+.ewm_father {
+    margin: 0px auto;
+    margin-top: 52px;
+}
+
+.trade_father span {
+    font-size: 15px;
+}
+
+
+/* 二维码字体样式 */
+
+.ewm_father span {
+    font-size: 20px;
+}
+
+
+/* 商标宽高 */
+
+.trade_mark {
+    width: 54px;
+    height: 60px;
+}
+
+
+/* 商标和二维码行间距 */
+
+.trade_father li,
+.ewm_father li {
+    padding-bottom: 22px;
+}
+
+
+/* 二维码宽高 */
+
+.ewm_mark {
+    width: 92px;
+    height: 92px;
+}
+
+
+/* 中间背景图样式 */
+
+.bg_img_father {
+    width: 100%;
+    background-image: url(data/images/bg02.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+    height: 516px;
+}
+
+.bg_img_father {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 查询页背景 */
+
+.bg_search_father {
+    width: 100%;
+    height: 880px;
+    /* position: absolute;
+    z-index: -5; */
+}
+
+.bg_search_father_modify {
+    width: 100%;
+    /* height: 880px; */
+}
+
+
+/* 表单、表格内容设置 */
+
+.contents {
+    padding: 20px;
+    width: 90%;
+    /* height: 750px; */
+    background-color: #95b3d7;
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.contents_modify {
+    padding: 20px;
+    width: 60%;
+    /* height: 300px; */
+    background-color: #95b3d7;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+/* 表单左边文字与输入框间距 */
+
+.bg_img_father label,
+.contents_modify label {
+    padding-right: 16px;
+}
+
+
+/* 设置查询页label标签与input框之间的距离 */
+
+.contents>.bg_search label {
+    text-align: center;
+}
+
+.register_bar {
+    margin-top: 154px;
+}
+
+.borders_reg {
+    width: 500px;
+    height: 300px;
+    opacity: 0.6;
+    position: absolute;
+    top: -28%;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid blue;
+    box-shadow: 5px 5px 6px black;
+}
+
+.borders_login {
+    width: 500px;
+    height: 252px;
+    opacity: 0.6;
+    position: absolute;
+    top: -28%;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid blue;
+    box-shadow: 5px 5px 6px black;
+}
+
+
+/* 注册按钮设置 */
+
+.reg_btn {
+    width: 70px;
+    height: 46px;
+    background-color: #2b98b4;
+    color: white;
+    font-size: 18px;
+}
+
+
+/* 登录按钮设置 */
+
+.login_btn {
+    width: 70px;
+    height: 46px;
+    background-color: #5db75d;
+    color: white;
+    font-size: 18px;
+}
+
+.take_space {
+    width: 100%;
+}
+
+
+/* 设置几个按钮的样式 */
+
+.btn-modify {
+    background-color: rgb(40, 177, 62);
+}
+
+.btn-empty,
+.btn-dele {
+    background-color: rgb(227, 46, 57);
+}
+
+.btn-research {
+    background-color: rgb(8, 101, 173);
+}
+
+
+/* 对清空查询按钮的对齐设置 */
+
+.contents .offset {
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+
+/* 设置表单行与行之间的行间距 */
+
+form.bg_search .col-md-3,
+form.bg_search .col-md-7 {
+    padding-bottom: 10px;
+}
+
+
+/* 波浪线设置 */
+
+.wave {
+    text-align: center;
+}
+
+
+/* 设置虚线div */
+
+.dashed_line {
+    width: 100%;
+    height: 0;
+    border: 1px dashed white;
+    margin-bottom: 20px;
+}
+
+.btn-dele {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.totals,
+.index {
+    line-height: 54px;
+    font-size: 18px;
+}
+
+.totals {
+    text-align: right;
+}
+
+.totals span,
+.index span {
+    color: red;
+}
+
+
+/* 查询页表格设置 */
+
+
+/* 文字的水平和垂直居中 */
+
+th,
+tr,
+td {
+    text-align: center;
+}
+
+.table.tbl td {
+    vertical-align: middle;
+}
+
+.pages {
+    text-align: center;
+}
+
+.pages [type="text"] {
+    border-radius: 20px;
+}

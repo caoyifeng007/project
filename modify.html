@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="main.css">
+    <title>修改页</title>
+</head>
+
+<body>
+    <div class="row topBar">
+        <div class="col-md-2 topBar_logo">
+            <a href="main.html">
+                <img class="img-responsive topBar_img" src="data/images/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="col-md-8 topBar_words">
+            商家管理系统
+        </div>
+        <div class="col-md-2 topBar_times" id="topBar_times">
+
+        </div>
+    </div>
+
+
+    <div class="manage_bar" id="manage_bar">
+        <div class="bgColor">
+            <div class="row btns">
+                <div class="col-md-6">
+                    <div class="col-md-4 login">
+                        <a href="login.html">登录</a>
+                    </div>
+                    <div class="col-md-4 register">
+                        <a href="register.html">注册</a>
+                    </div>
+                    <div class="col-md-4 nav_father" id="nav_father">
+                        <a href="#">
+                            <div class="col-md-6 nav_down" id="nav_down">
+                                <img src="data/images/down.png" alt="">
+                                <span>商家管理</span>
+                            </div>
+                            <div class="col-md-6 nav_up" id="nav_up">
+                                <img src="data/images/up.png" alt="">
+                                <span>商家管理</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 plz_login" id="plz_login">
+                    <span>
+                      请登录
+                  </span>
+                    <input type="button" class="btn btn-default sign_out" id="sign_out" value="注销">
+                </div>
+            </div>
+        </div>
+        <div class="row dropList" id="dropList">
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+                <a href="#" id="research">
+                    <img class="img-responsiveb search" src="data/images/timg.png" alt="">
+                    <span>查询</span>
+                </a>
+            </div>
+            <div class="col-md-1 vertical_line"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <a href="#" id="append">
+                    <img src="data/images/zj.png" class="append" alt="">
+                    <span>添加</span>
+                </a>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+
+    <img class="bg_search_father_modify" src="data/images/image16.jpg" alt="背景图">
+
+
+    <div class="contents_modify">
+
+        <form class="form-horizontal bg_search">
+            <!-- 第一行 -->
+            <label for="storeID" class="col-md-1 control-label">&nbsp&nbsp&nbsp&nbsp商家ID</label>
+            <div class="col-md-3">
+                <input type="text" readonly class="form-control" id="storeID">
+            </div>
+
+            <label for="storeName" class="col-md-2 control-label">&nbsp&nbsp商家名</label>
+            <div class="col-md-4">
+                <input type="password" class="form-control" id="storeName">
+            </div>
+            <div class="form-group col-md-2 take_space"></div>
+
+
+
+            <!-- 第二行 -->
+            <label for="storeTel" class="col-md-1 control-label">电话</label>
+            <div class="col-md-3">
+                <input type="password" class="form-control" id="storeTel">
+            </div>
+
+            <label class="col-md-2 control-label">商家分类</label>
+            <div class="col-md-4">
+                <div class="col-md-3">
+                    <div class="radio">
+                        <label>
+                        <input type="radio" name="food"> 中餐
+                    </label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="radio">
+                        <label>
+                      <input type="radio" name="food"> 韩料
+                    </label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="radio">
+                        <label>
+                      <input type="radio" name="food"> 日料
+                    </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group col-md-2 take_space"></div>
+
+            <!-- 第三行 -->
+            <label for="storeAddress" class="col-md-1 control-label">商家地址</label>
+            <div class="col-md-3">
+                <input list="storeAddress" class="form-control">
+                <datalist id="storeAddress">
+                  <option value="干井子区" selected>          
+                </datalist>
+            </div>
+
+            <label for="detailAddress" class="col-md-2 control-label">详细地址</label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="detailAddress">
+            </div>
+            <div class="form-group col-md-2 take_space"></div>
+
+            <!-- 第四行 -->
+            <label for="costs" class="col-md-1 control-label">人均消费</label>
+            <div class="col-md-3">
+                <input type="number" class="form-control" id="costs" value="0" min="0">
+            </div>
+
+            <div class="form-group col-md-3 take_space"></div>
+
+
+            <!-- 第五行 -->
+            <div class="col-md-1 col-md-offset-3">
+                <input type="reset" class="btn btn-danger btn-empty" value="清空">
+            </div>
+            <div class="col-md-1 col-md-offset-2">
+                <input type="submit" class="btn btn-primary btn-research" value="保存">
+            </div>
+
+        </form>
+
+
+
+
+    </div>
+
+
+
+    <div class="foot_bar ">
+        <div class="row ">
+            <div class="col-md-3 "></div>
+            <div class="col-md-4 trade_father ">
+                <ul>
+                    <li>
+                        <img src="data/images/wx.png " class="trade_mark " alt="... ">
+                    </li>
+                    <li>
+                        <span>Copyright&nbsp&copy&nbsp2017&nbsp知润&#46&nbspAll&nbspRights&nbspReserved</span>
+                    </li>
+                    <li>
+                        <span>关于我们&nbsp&nbsp&#124&nbsp&nbsp关于我们&nbsp&nbsp&#124&nbsp&nbsp关于我们</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 ewm_father ">
+                <ul>
+                    <li>
+                        <span>关注微信公众号</span>
+                    </li>
+                    <li>
+                        <img class="ewm_mark " src="data/images/ewm.png " alt="... ">
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
+    <script src="main.js "></script>
+</body>
+
+</html>

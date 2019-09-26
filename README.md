@@ -1,1 +1,1 @@
-project
+Next Seeker front project.

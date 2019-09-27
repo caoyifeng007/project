@@ -90,6 +90,7 @@ $(document).ready(function() {
         $("#dropList").fadeOut(1000); //收起二级菜单
     })
 
+    // 方法
     // 选取id为manage_bar下除了nav_father的所有class为col-md-4的div
     $("#manage_bar .col-md-4:not(#nav_father)").mouseenter(function() {
         $("#nav_down").show(); // down显示      
@@ -146,9 +147,9 @@ $(document).ready(function() {
 
         var x = $(".tobe_del:checked");
         num = x.length;
-        for (var i of x) {         
-          arry.push(i);
-          arry_id.push($(i).parent().next().text());                          
+        for (var i of x) {
+            arry.push(i);
+            arry_id.push($(i).parent().next().text());
         }
 
 
@@ -202,3 +203,5 @@ $(document).ready(function() {
 
 
 });
+
+//test
